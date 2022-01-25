@@ -6,6 +6,7 @@ import Banner from './Banner';
 import BusinessContent from './BusinessContent';
 import CompanyProfile from './CompanyProfile';
 import ValidatorInfo from './ValidatorInfo';
+import FAQ from './FAQ';
 
 import Footer from './Footer';
 import './static/style';
@@ -37,6 +38,7 @@ class Home extends React.PureComponent {
             <BusinessContent isMobile={this.state.isMobile} />
             <ValidatorInfo />
             <CompanyProfile />
+            <FAQ />
           </div>
           <Footer />
         </div>

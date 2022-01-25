@@ -1,5 +1,4 @@
 import React from 'react';
-import QueueAnim from 'rc-queue-anim';
 import { Table } from 'antd';
 
 const dataSource = [
@@ -59,7 +58,7 @@ function CompanyProfile() {
         </div>
         <h2><span>会社概要</span></h2>
         <div>
-          <QueueAnim key="queue" type="bottom" leaveReverse className="page2-content">
+          <div className="page2-content">
             <p key="p" className="page-content" />
             <div key="code1" className="home-code">
               <Table
@@ -69,7 +68,7 @@ function CompanyProfile() {
                 showHeader={false}
               />
             </div>
-          </QueueAnim>
+          </div>
         </div>
       </div>
     </div>
