@@ -33,7 +33,7 @@ const dataSource = [
   },
   {
     attribute: '代表者',
-    value: '体表社員　タグネピス　ジェイクマーバートパホニラン',
+    value: '代表社員　タグネピス　ジェイクマーバートパホニラン',
   },
 ];
 
@@ -60,10 +60,14 @@ function CompanyProfile() {
         <h2><span>会社概要</span></h2>
         <div>
           <QueueAnim key="queue" type="bottom" leaveReverse className="page2-content">
-            <p key="p" className="page-content">
-            </p>
+            <p key="p" className="page-content" />
             <div key="code1" className="home-code">
-            <Table dataSource={dataSource} columns={columns} pagination={false} showHeader={false}/>
+              <Table
+                dataSource={dataSource}
+                columns={columns}
+                pagination={false}
+                showHeader={false}
+              />
             </div>
           </QueueAnim>
         </div>

@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import GitHubButton from 'react-github-button';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
-import { Button } from 'antd';
 import BannerSVGAnim from './component/BannerSVGAnim';
 
 function Banner(props) {

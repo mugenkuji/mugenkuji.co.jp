@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
-import FantomLogo from './icons/fantom.svg'
-import Web3Logo from './icons/web3.jpg'
-import EthereumLogo from './icons/ethereum.svg'
+import FantomLogo from './icons/fantom.svg';
+import Web3Logo from './icons/web3.jpg';
+import EthereumLogo from './icons/ethereum.svg';
 
 const { TweenOneGroup } = TweenOne;
 
@@ -31,14 +31,6 @@ const featuresCN = [
   },
 ];
 
-const pointPos = [
-  { x: -30, y: -10 },
-  { x: 20, y: -20 },
-  { x: -65, y: 15 },
-  { x: -45, y: 80 },
-  { x: 35, y: 5 },
-  { x: 50, y: 50, opacity: 0.2 },
-];
 
 class BusinessContent extends React.PureComponent {
   static propTypes = {
@@ -113,7 +105,7 @@ class BusinessContent extends React.PureComponent {
       children[Math.floor(i / 3)].push(child);
     });
 
-    children = children.map((item, i) => (
+    children = children.map(item => (
       <div
         className="page1-box-wrapper"
       >
@@ -124,9 +116,8 @@ class BusinessContent extends React.PureComponent {
       <div className="home-page page1" >
         <div className="home-page-wrapper" id="page1-wrapper">
           <h2><span>業務内容</span></h2>
-          <div className="title-line-wrapper page1-line">
-          </div>
-            <div className="title-line" />
+          <div className="title-line-wrapper page1-line" />
+          <div className="title-line" />
           <div>
             {children}
           </div>

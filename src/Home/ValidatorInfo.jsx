@@ -30,9 +30,9 @@ function ValidatorInfo() {
     {
       attribute: 'バリデーターの詳細 (英語)',
       value: 'https://explorer.fantom.network/validator/0x11a4e8c9c57b7bd4e5b27f46705767df50db03ed',
-    }
+    },
   ];
-  
+
   const columns = [
     {
       title: 'Attribute',
@@ -53,11 +53,15 @@ function ValidatorInfo() {
         </div>
         <h2><span>ファントムバリデーター情報</span></h2>
         <div>
-            <p key="p" className="page-content">
-            </p>
-            <div key="code1" className="home-code">
-            <Table dataSource={dataSource} columns={columns} pagination={false} showHeader={false}/>
-            </div>
+          <p key="p" className="page-content" />
+          <div key="code1" className="home-code">
+            <Table
+              dataSource={dataSource}
+              columns={columns}
+              pagination={false}
+              showHeader={false}
+            />
+          </div>
         </div>
       </div>
     </div>
