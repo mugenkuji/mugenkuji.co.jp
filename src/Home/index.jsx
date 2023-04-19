@@ -5,7 +5,7 @@ import { enquireScreen } from 'enquire-js';
 import Banner from './Banner';
 import BusinessContent from './BusinessContent';
 import CompanyProfile from './CompanyProfile';
-import ValidatorInfo from './ValidatorInfo';
+
 import FAQ from './FAQ';
 
 import Footer from './Footer';
@@ -36,7 +36,7 @@ class Home extends React.PureComponent {
           <div className="home-wrapper">
             <Banner isMobile={this.state.isMobile} />
             <BusinessContent isMobile={this.state.isMobile} />
-            <ValidatorInfo />
+
             <CompanyProfile />
             <FAQ />
           </div>
